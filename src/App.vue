@@ -1,6 +1,8 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import LandingPage from './pages/LandingPage.vue';
+import NavigationLinks from './components/NavigationLinks.vue';
+import HeadwayLogo from './components/HeadwayLogo.vue';
 </script>
 
 <script>
@@ -15,12 +17,30 @@ export default {
 
 <template>
   <header v-if="showHeader">
-    <h1>Header</h1>
+    <RouterLink to="/">
+        <HeadwayLogo></HeadwayLogo>
+    </RouterLink>
+    <NavigationLinks></NavigationLinks>
   </header>
   <RouterView></RouterView>
+
+  <footer v-if="showHeader">
+    <p>(c) 2023 Headway Kollektiv</p>
+  </footer>
 </template>
 
 <style scoped>
+h1.logo {
+  text-align: center;
+}
+
+footer {
+  /* position: absolute; */
+  bottom: 25px;
+  padding: 2em 0;
+  text-align: center;
+}
+
 /*.logo {
   height: 6em;
   padding: 1.5em;
@@ -35,4 +55,6 @@ export default {
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }*/
+
+
 </style>
