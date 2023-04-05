@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: STAGING=true npm run build
 
       - name: List built directory
         run: find dist
