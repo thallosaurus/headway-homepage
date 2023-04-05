@@ -17,7 +17,7 @@
 }
 
 body {
-  margin: 0 25%;
+  margin: 0 15%;
   background-color: black;
   /* padding: 1em; */
   min-height: 100vh;
@@ -56,19 +56,25 @@ a:hover {
 
 /* BUTTON STYLES */
 button {
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 1em;
   border: 5px solid white;
   font-family: Pirulen;
+  font-size: 24px;
+  padding: 0;
 }
 
-button:active,
+h1 {
+  text-align: center;
+}
+
+/* button:active,
 button:hover,
 button:focus {
   color: black;
   background-color: white;
-}
+} */
 
 @font-face {
   font-family: Pirulen;

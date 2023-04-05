@@ -7,7 +7,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/stuckeyrella"
+                    "href": "https://soundcloud.com/stuckeyrella",
+                    "icon": "soundcloud"
                 }
             ],
             "featuredAudio": "https://soundcloud.com/rillonautikum/ego-death"
@@ -19,7 +20,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/herr_blaubeer"
+                    "href": "https://soundcloud.com/herr_blaubeer",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -30,7 +32,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/cosinus1p"
+                    "href": "https://soundcloud.com/cosinus1p",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -41,7 +44,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/officialpaschen"
+                    "href": "https://soundcloud.com/officialpaschen",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -52,7 +56,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/dd20_techno"
+                    "href": "https://soundcloud.com/dd20_techno",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -63,7 +68,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/apollon_859"
+                    "href": "https://soundcloud.com/apollon_859",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -74,7 +80,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/official_impactcore"
+                    "href": "https://soundcloud.com/official_impactcore",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -85,7 +92,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/mister165"
+                    "href": "https://soundcloud.com/mister165",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -96,7 +104,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/technoabi"
+                    "href": "https://soundcloud.com/technoabi",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -107,7 +116,8 @@
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/liyo_official"
+                    "href": "https://soundcloud.com/liyo_official",
+                    "icon": "soundcloud"
                 }
             ]
         },
@@ -115,10 +125,15 @@
             "name": "rillonautikum",
             "pictureUrl": "artists/rillonautikum.jpg",
             "desc": "Ich bin eine Beschreibung",
+            "subgenres": [
+                "Schranz",
+                "Dark Industrial Techno"
+            ],
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com/rillonautikum"
+                    "href": "https://soundcloud.com/rillonautikum",
+                    "icon": "soundcloud"
                 }
             ]
         }

@@ -42,9 +42,25 @@ export default {
     opacity: 1;
 }
 
+@keyframes inverter {
+    0% {
+        filter: blur(0) hue-rotate(0deg);
+    }
+    50% {
+        filter: blur(00px) hue-rotate(0deg);
+
+    }
+    100% {
+        filter: blur(0) hue-rotate(0deg);
+    }
+}
+
 .cell:hover img {
-    filter: saturate(0%);
+    filter: grayscale(100%);
     transform: scale(1.2);
+
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
 }
 
 .cell {

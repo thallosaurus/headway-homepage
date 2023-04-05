@@ -22,29 +22,34 @@ export default {
 
 <template>
     <template v-if="this.currentArtist">
-        <p>
-            <RouterLink to="/artists">&lt; Go back</RouterLink>
-        </p>
+        <p class="logo-container">
         <h1>
             <!--             <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl"> -->
-            <div class="nologo">
+            <div class="logo">
                 {{ currentArtist.name }}
             </div>
         </h1>
+        <RouterLink to="/artists">&lt; Go back</RouterLink>
+        </p>
         <div class="container">
             <img id="pic" :src="currentArtist.pictureUrl">
+            <p class="text">
 
-            <p>{{ currentArtist.desc }}</p>
+                <span>
 
-            <h2>Socials:</h2>
-            <ul>
-                <li v-for="social in currentArtist.socials">
-                    <a :href="social.href">{{ social.name }}</a>
-                </li>
-            </ul>
-            <form @submit.stop.prevent="book()">
-                <button class="fullwidth">Book me!</button>
-            </form>
+                    {{ currentArtist.desc }}
+                </span>
+                
+                <h2>Socials:</h2>
+                <ul>
+                    <li v-for="social in currentArtist.socials" :class="'icon-' + social.icon ?? 'none'">
+                        <a :href="social.href">{{ social.name }}</a>
+                    </li>
+                </ul>
+            </p>
+                <form @submit.stop.prevent="book()">
+                    <button class="fullwidth">Book me!</button>
+                </form>
         </div>
 
     </template>
@@ -57,6 +62,15 @@ export default {
 </template>
 
 <style scoped>
+.text {
+    display: inline-block;
+}
+.logo-container {
+    border-bottom: 1px solid grey;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
 .fullwidth {
     width: 100%;
 }
@@ -68,14 +82,17 @@ export default {
     max-width: 250px;
 }
 
-.logo {
+.nologo {
     width: 100%;
-    display: inline-block;
 }
 
-.nologo {
+.logo {
     text-align: center;
     font-family: Pirulen;
+}
+
+.logo h1 {
+    display: inline-block;
 }
 
 @media (pointer: coarse) {

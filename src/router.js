@@ -14,7 +14,7 @@ const routes = [
         name: "landing"
     },
     { path: '/about', component: AboutPage, name: "about" },
-    { path: '/artists', component: ArtistsPage, name: "allArtists" },
+    { path: '/artists', component: ArtistsPage, name: "artists" },
     { path: '/artists/:id', name: "artistdetails", component: ArtistsDetailsPage },
     { path: '/sets', component: SetPage, name: "sets" },
     { path: '/dates', component: DatesPage, name: "dates" },

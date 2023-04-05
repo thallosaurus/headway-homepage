@@ -1,23 +1,29 @@
-<script setup>
-
+<script>
+export default {
+    computed: {
+        currentRoute() {
+            return this.$route.name;
+        }
+    }
+}
 </script>
 
 <template>
     <ul id="links">
-        <li>
+        <li :class="{ selected: currentRoute == 'about' }">
             <!-- <RouterLink to="" -->
             <RouterLink to="/about">about</RouterLink>
         </li>
-        <li>
-            <RouterLink to="/artists">artists</RouterLink>
+        <li :class="{ selected: currentRoute == 'artists' }">
+            <RouterLink  to="/artists">artists</RouterLink>
         </li>
-        <li>
+        <li :class="{ selected: currentRoute == 'dates' }" >
             <RouterLink to="/dates">dates</RouterLink>
         </li>
-        <li>
+        <li :class="{ selected: currentRoute == 'sets' }" >
             <RouterLink to="/sets">sets</RouterLink>
         </li>
-        <li>
+        <li :class="{ selected: currentRoute == 'booking' }" >
             <RouterLink to="/booking">booking</RouterLink>
         </li>
     </ul>
@@ -37,10 +43,23 @@
 }
 
 ul>li {
-    color: white;
 
+    color: white;
     padding: 4px;
     margin: .2em;
+}
+
+.selected {
+    color: black !important;
+    background-color: white;
+}
+
+.selected a:link {
+  color: black;
+}
+
+.selected a:visited {
+  color: black;
 }
 
 /* ul>li:not(:first-child):not(:last-child)::before {
