@@ -8,7 +8,8 @@ export default {
     data() {
         return {
             currentArtistOld: this.$store.state.artists[0],
-            artistId: this.$route.params.id
+            artistId: this.$route.params.id,
+            artistLabel: ""
         }
     },
     computed: {
@@ -16,7 +17,6 @@ export default {
             return this.$store.state.artists[this.artistId];
         }
     }
-
 }
 </script>
 
@@ -26,8 +26,8 @@ export default {
             <RouterLink to="/artists">&lt; Go back</RouterLink>
         </p>
         <h1>
-            <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl">
-            <div class="nologo" v-else>
+            <!--             <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl"> -->
+            <div class="nologo">
                 {{ currentArtist.name }}
             </div>
         </h1>
@@ -63,9 +63,10 @@ export default {
 
 #pic {
     float: left;
-    width: 10em;
+    width: 10vw;
     /* height: 500px; */
     padding: 0 20px 20px 0;
+    max-width: 250px;
 }
 
 .logo {
@@ -76,5 +77,15 @@ export default {
 .nologo {
     text-align: center;
     font-family: Pirulen;
+}
+
+@media only screen and (max-width: 768px) {
+    #pic {
+        float: left;
+        width: 10vw;
+        /* height: 500px; */
+        padding: 0 20px 20px 0;
+        max-width: 250px;
+    }
 }
 </style>

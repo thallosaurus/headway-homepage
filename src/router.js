@@ -13,12 +13,12 @@ const routes = [
         component: LandingPage,
         name: "landing"
     },
-    { path: '/about', component: AboutPage },
-    { path: '/artists', component: ArtistsPage },
+    { path: '/about', component: AboutPage, name: "about" },
+    { path: '/artists', component: ArtistsPage, name: "allArtists" },
     { path: '/artists/:id', name: "artistdetails", component: ArtistsDetailsPage },
-    { path: '/sets', component: SetPage },
-    { path: '/dates', component: DatesPage },
-    { path: '/booking', component: BookingPage },
+    { path: '/sets', component: SetPage, name: "sets" },
+    { path: '/dates', component: DatesPage, name: "dates" },
+    { path: '/booking', component: BookingPage, name: "booking" },
 ]
 
 // 3. Create the router instance and pass the `routes` option
