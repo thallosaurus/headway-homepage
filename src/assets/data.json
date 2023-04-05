@@ -1,70 +1,102 @@
 {
     "artists": [
         {
-            "name": "DJ Platzhalter",
-            "pictureUrl": "https://placekitten.com/150/150",
-            "logoUrl": "placeholder.png",
+            "name": "Stuckeyrella",
+            "pictureUrl": "artists/stuckeyrella.jpg",
             "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/stuckeyrella"
                 }
             ],
             "featuredAudio": "https://soundcloud.com/rillonautikum/ego-death"
         },
         {
-            "name": "DJ M4dC4t",
-            "pictureUrl": "https://placekitten.com/350/350",
+            "name": "Herr Blaubeer",
+            "pictureUrl": "artists/herrblaubeer.jpg",
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/herr_blaubeer"
                 }
             ]
         },
         {
-            "name": "Meownopren",
-            "pictureUrl": "https://placekitten.com/550/550",
+            "name": "Cosinus",
+            "pictureUrl": "artists/cosinus.jpg",
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/cosinus1p"
                 }
             ]
         },
         {
-            "name": "MeowCore",
-            "pictureUrl": "https://placekitten.com/450/450",
+            "name": "Paschen",
+            "pictureUrl": "artists/paschen.jpg",
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/officialpaschen"
                 }
             ]
         },
         {
-            "name": "Meonautikewm",
-            "pictureUrl": "https://placekitten.com/420/420",
+            "name": "DD20",
+            "pictureUrl": "artists/dd20.jpg",
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/dd20_techno"
                 }
             ]
         },
         {
-            "name": "DJ Tangenz",
-            "pictureUrl": "https://placekitten.com/1000/1000",
+            "name": "Apollon",
+            "pictureUrl": "artists/apollon.jpg",
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
-                    "href": "https://soundcloud.com"
+                    "href": "https://soundcloud.com/apollon_859"
+                }
+            ]
+        },
+        {
+            "name": "ImpactCore",
+            "pictureUrl": "artists/impactcore.jpg",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com/official_impactcore"
+                }
+            ]
+        },
+        {
+            "name": "Turntable Terrorist",
+            "pictureUrl": "artists/turntableterrorist.jpg",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com/mister165"
+                }
+            ]
+        },
+        {
+            "name": "Technoabi",
+            "pictureUrl": "artists/technoabi.jpg",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com/technoabi"
                 }
             ]
         }

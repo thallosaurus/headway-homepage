@@ -1,6 +1,6 @@
 <script setup>
 // import djs from '../assets/dj.json';
-import ArtistCell from '../components/ArtistCell.vue';
+import NewArtistCell from '../components/NewArtistCell.vue';
 // console.log(djs);
 </script>
 
@@ -8,10 +8,21 @@ import ArtistCell from '../components/ArtistCell.vue';
 export default {
     computed: {
         artists() {
-            return this.$store.state.artists
+            let a = this.$store.state.artists.map((value, index) => {
+                return {
+                    artist: value,
+                    index: index
+                }
+            });
+
+            console.log(a)
+
+            return a.sort((a, b) => {
+                return Math.random() > 0.5 ? 1 : -1;
+            });
         }
     },
-    components: { ArtistCell }
+    components: { NewArtistCell }
 }
 </script>
 
@@ -19,28 +30,39 @@ export default {
     <h1>Artists</h1>
     <!-- Grid here -->
     <div class="grid">
-        <ArtistCell v-for="(artist, index) in artists" :index="index" :artist="artist"></ArtistCell>
+        <NewArtistCell v-for="entry in artists" :index="entry.index" :artist="entry.artist"></NewArtistCell>
     </div>
 </template>
 
 <style scoped>
 .grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*
 
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 100%;
     /*
     grid-template-rows: 1fr 1fr 1fr;
-    */
-    gap: 20px 20px;
+
+    gap: 0px 0px; */
+    align-content: start;
+
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+.grid > * {
 
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+}
+
+@media (pointer: coarse) {
+    /* For mobile phones: */
+
+    .grid {}
+
+    .grid>* {
+        padding: 0;
+    }
 }
 </style>

@@ -38,7 +38,7 @@
 
 ul>li {
     color: white;
-    background-color: black;
+
     padding: 4px;
     margin: .2em;
 }

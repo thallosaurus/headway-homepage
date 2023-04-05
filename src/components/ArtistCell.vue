@@ -19,7 +19,8 @@ export default {
     </RouterLink>
 </template>
 
-<style>
+<style scoped>
+/*
 .cell {
     display: block;
     position: relative;
@@ -27,19 +28,20 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 20vw; */
-    height: 20vh;
+    /* width: 20vw; *
+    width: 500px;
+    height: 500px;
 }
 
 .cell:hover {
     text-decoration: none;
 }
 
-/* @media (pointer: fine) { */
+ @media (pointer: fine) { *
 
     .cell img.artist {
-        top: -25%;
-        left: 0;
+        *top: -25%;*
+
 
         width: auto;
 
@@ -54,7 +56,6 @@ export default {
         min-height: 150px;
 
         width: 100%;
-        height: auto;
         vertical-align: middle;
     }
 
@@ -65,7 +66,6 @@ export default {
 
     .cell:hover .label {
         opacity: 1;
-        /* display: block; */
     }
 
     .cell:focus img.artist {
@@ -75,7 +75,7 @@ export default {
 
     .cell:focus .label {
         opacity: 1;
-        /* display: block; */
+        * display: block; 
     }
 
     .label {
@@ -91,7 +91,7 @@ export default {
     .label .nologo {
         
         background-color: black;
-        /* font-family: Pirulen; */
+         font-family: Pirulen; *
         width: 100%;
     }
 
@@ -99,7 +99,7 @@ export default {
         width: 100%;
         background-color: black;
     }
-/* } */
+ } */
 
 .cell a:link span {
     color: white;
