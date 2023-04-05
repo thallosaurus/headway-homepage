@@ -26,7 +26,6 @@ export default {
         <div class="box">
 
             <HeadwayLogo></HeadwayLogo>
-            <p>Previewversion</p>
             <NavigationLinks></NavigationLinks>
         </div>
     </div>

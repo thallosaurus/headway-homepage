@@ -18,9 +18,12 @@
 
 body {
   margin: 0 25%;
-  background-color: rgb(22, 22, 22);
+  background-color: black;
   /* padding: 1em; */
   min-height: 100vh;
+}
+.bg {
+  background-color: rgb(22, 22, 22);
 }
 
 @media only screen and (max-width: 768px) {

@@ -21,7 +21,7 @@ export default {
     <NavigationLinks></NavigationLinks>
   </header>
 
-  <div class="padding">
+  <div class="padding" :class="{bg: showHeader}">
 
     <RouterView></RouterView>
     

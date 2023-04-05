@@ -22,37 +22,30 @@ export default {
 
 <template>
     <template v-if="this.currentArtist">
-    <p>
-        <RouterLink to="/artists">&lt; Go back</RouterLink>
-    </p>
-    <h1>
-        <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl">
-        <div class="nologo" v-else>
-            {{ currentArtist.name }}
-        </div>
-    </h1>
-
-
-
-
-
-            <div class="container">
-                <img id="pic" :src="currentArtist.pictureUrl">
-            
-            
-
-                <p>{{ currentArtist.desc }}</p>
-
-                <h2>Socials:</h2>
-                <ul>
-                    <li v-for="social in currentArtist.socials">
-                        <a :href="social.href">{{ social.name }}</a>
-                    </li>
-                </ul>
-                <form @submit.stop.prevent="book()">
-                    <button class="fullwidth">Book me!</button>
-                </form>
+        <p>
+            <RouterLink to="/artists">&lt; Go back</RouterLink>
+        </p>
+        <h1>
+            <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl">
+            <div class="nologo" v-else>
+                {{ currentArtist.name }}
             </div>
+        </h1>
+        <div class="container">
+            <img id="pic" :src="currentArtist.pictureUrl">
+
+            <p>{{ currentArtist.desc }}</p>
+
+            <h2>Socials:</h2>
+            <ul>
+                <li v-for="social in currentArtist.socials">
+                    <a :href="social.href">{{ social.name }}</a>
+                </li>
+            </ul>
+            <form @submit.stop.prevent="book()">
+                <button class="fullwidth">Book me!</button>
+            </form>
+        </div>
 
     </template>
     <template v-else>
