@@ -63,7 +63,6 @@ export default {
 
 #pic {
     float: left;
-    width: 10vw;
     /* height: 500px; */
     padding: 0 20px 20px 0;
     max-width: 250px;
@@ -79,10 +78,10 @@ export default {
     font-family: Pirulen;
 }
 
-@media only screen and (max-width: 768px) {
+@media (pointer: coarse) {
     #pic {
         float: left;
-        width: 10vw;
+        width: 35vw;
         /* height: 500px; */
         padding: 0 20px 20px 0;
         max-width: 250px;
