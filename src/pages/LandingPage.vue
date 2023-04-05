@@ -21,16 +21,42 @@ export default {
 
 <template>
     <!-- <h1>HEADWAY</h1> -->
-    <HeadwayLogo></HeadwayLogo>
-    <p>Previewversion</p>
-    <NavigationLinks></NavigationLinks>
+    <div class="container">
+
+        <div class="box">
+
+            <HeadwayLogo></HeadwayLogo>
+            <p>Previewversion</p>
+            <NavigationLinks></NavigationLinks>
+        </div>
+    </div>
 
     <div class="gallery">
-        
+
     </div>
 </template>
 
 <style scoped>
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "."
+        "text"
+        ".";
+    height: 90vh;
+    padding: 0em !important;
+}
+
+.container .box {
+    grid-area: text;
+}
+
 .gallery {
     /* background-color: green; */
     width: 100vw;

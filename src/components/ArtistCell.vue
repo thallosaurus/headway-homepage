@@ -34,7 +34,7 @@ export default {
 
     width: auto;
 
-    z-index: -1;
+    z-index: 1;
     transition: all .2s linear;
     position: absolute;
     filter: saturate(0%);
@@ -67,6 +67,7 @@ export default {
     opacity: 0;
     background-color: black;
     transition: all .2s linear;
+    z-index: 2;
 }
 
 .cell a:link span {

@@ -1,6 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import LandingPage from './pages/LandingPage.vue';
+// import HelloWorld from './components/HelloWorld.vue'
+// import LandingPage from './pages/LandingPage.vue';
 import NavigationLinks from './components/NavigationLinks.vue';
 import HeadwayLogo from './components/HeadwayLogo.vue';
 </script>
@@ -22,14 +22,21 @@ export default {
     </RouterLink>
     <NavigationLinks></NavigationLinks>
   </header>
-  <RouterView></RouterView>
 
-  <footer v-if="showHeader">
-    <p>(c) 2023 Headway Kollektiv</p>
-  </footer>
+  <div class="padding">
+
+    <RouterView></RouterView>
+    
+    <footer v-if="showHeader">
+      <p>(c) 2023 Headway Kollektiv</p>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
+.padding {
+  padding: 1em;
+}
 h1.logo {
   text-align: center;
 }

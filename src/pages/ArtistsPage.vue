@@ -1,5 +1,5 @@
 <script setup>
-import djs from '../assets/dj.json';
+// import djs from '../assets/dj.json';
 import ArtistCell from '../components/ArtistCell.vue';
 // console.log(djs);
 </script>
@@ -8,7 +8,7 @@ import ArtistCell from '../components/ArtistCell.vue';
 export default {
     computed: {
         artists() {
-            return djs.artists;
+            return this.$store.state.artists
         }
     },
     components: { ArtistCell }
