@@ -99,6 +99,28 @@
                     "href": "https://soundcloud.com/technoabi"
                 }
             ]
+        },
+        {
+            "name": "LIYO",
+            "pictureUrl": "artists/liyo.jpg",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com/liyo_official"
+                }
+            ]
+        },
+        {
+            "name": "rillonautikum",
+            "pictureUrl": "artists/rillonautikum.jpg",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com/rillonautikum"
+                }
+            ]
         }
     ],
     "gallery": [

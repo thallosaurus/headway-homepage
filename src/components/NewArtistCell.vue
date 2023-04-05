@@ -77,10 +77,14 @@ export default {
     }
 
     .cell .overlay span {
-        display:block;
+        display: block;
         width: 100%;
         background-color: rgba(0, 0, 0, 1);
         margin-bottom: 5px;
+    }
+
+    .cell:hover img {
+        transform: unset;
     }
 }
 </style>
