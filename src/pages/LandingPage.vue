@@ -8,7 +8,7 @@ import data from '../assets/data.json';
 export default {
     data() {
         return {
-            currentBackground: 0
+            currentBackground: 0,
         }
     },
     computed: {
@@ -26,7 +26,13 @@ export default {
         <div class="box">
 
             <HeadwayLogo></HeadwayLogo>
-            <NavigationLinks></NavigationLinks>
+            <form v-if="!$store.state.cookiesAccepted" class="cookie-consent">
+                <p>
+                    we maybe use cookies.
+                </p>
+                <button type="submit" class="fullwidth" @click="$store.state.cookiesAccepted=true">Give me cookies!</button>
+            </form>
+            <NavigationLinks v-else></NavigationLinks>
         </div>
     </div>
 
@@ -36,6 +42,14 @@ export default {
 </template>
 
 <style scoped>
+
+.cookie-consent {
+    text-align: center;
+}
+
+.cookie-consent button {
+
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;

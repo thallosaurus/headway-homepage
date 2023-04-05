@@ -9,6 +9,7 @@ export default {
 </script>
 
 <template>
+
     <ul id="links">
         <li :class="{ selected: currentRoute == 'about' }">
             <!-- <RouterLink to="" -->
