@@ -13,9 +13,7 @@ export default {
     },
     computed: {
         currentArtist: function () {
-            console.log("this", this);
             return this.$store.state.artists[this.artistId];
-            // return this.$store.state.artists[this.$route.params.id];
         }
     }
 

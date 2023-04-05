@@ -59,6 +59,16 @@ export default {
     /* display: block; */
 }
 
+.cell:focus img {
+    transform: scale(1.2);
+    filter: saturate(100%);
+}
+
+.cell:focus .label {
+    opacity: 1;
+    /* display: block; */
+}
+
 .label {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;

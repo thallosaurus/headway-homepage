@@ -59,7 +59,8 @@ button {
   border: 5px solid white;
 }
 
-button:active {
+button:active,
+button:focus {
   color: black;
   background-color: white;
 }
