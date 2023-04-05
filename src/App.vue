@@ -1,6 +1,4 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import LandingPage from './pages/LandingPage.vue';
 import NavigationLinks from './components/NavigationLinks.vue';
 import HeadwayLogo from './components/HeadwayLogo.vue';
 </script>
