@@ -74,8 +74,10 @@
     ],
     "dates": [
         {
-            "title": "Testveranstaltung",
-            "promo": "berghain.jpg"
+            "title": "rillos epischer garagenrave #420",
+            "promo": "berghain.jpg",
+            "ts": 1682000400,
+            "where": "rillos garage"
         }
     ]
 }
