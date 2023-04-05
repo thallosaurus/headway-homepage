@@ -9,9 +9,12 @@ export default {
 
 <template>
     <RouterLink :to="{ name: 'artistdetails', params: { id: index } }" class="cell">
-        <img :src="artist.pictureUrl">
+        <img class="artist" :src="artist.pictureUrl">
         <span class="label">
-            {{ artist.name }}
+            <img v-if="artist.logoUrl" class="logo" :src="artist.logoUrl">
+            <span class="nologo" v-else>
+                {{ artist.name }}
+            </span>
         </span>
     </RouterLink>
 </template>
@@ -28,57 +31,75 @@ export default {
     height: 20vh;
 }
 
-.cell img {
-    top: -25%;
-    left: 0;
-
-    width: auto;
-
-    z-index: 1;
-    transition: all .2s linear;
-    position: absolute;
-    filter: saturate(0%);
-
-    max-width: 100%;
-
-    min-width: 150px;
-    min-height: 150px;
-
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
+.cell:hover {
+    text-decoration: none;
 }
 
-.cell:hover img {
-    transform: scale(1.2);
-    filter: saturate(100%);
-}
+/* @media (pointer: fine) { */
 
-.cell:hover .label {
-    opacity: 1;
-    /* display: block; */
-}
+    .cell img.artist {
+        top: -25%;
+        left: 0;
 
-.cell:focus img {
-    transform: scale(1.2);
-    filter: saturate(100%);
-}
+        width: auto;
 
-.cell:focus .label {
-    opacity: 1;
-    /* display: block; */
-}
+        z-index: 1;
+        transition: all .2s linear;
+        position: absolute;
+        filter: saturate(100%);
 
-.label {
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    display: block;
-    opacity: 0;
-    background-color: black;
-    transition: all .2s linear;
-    z-index: 2;
-}
+        max-width: 100%;
+
+        min-width: 150px;
+        min-height: 150px;
+
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .cell:hover img.artist {
+        transform: scale(1.2);
+        filter: saturate(0%);
+    }
+
+    .cell:hover .label {
+        opacity: 1;
+        /* display: block; */
+    }
+
+    .cell:focus img.artist {
+        transform: scale(1.2);
+        filter: saturate(0%);
+    }
+
+    .cell:focus .label {
+        opacity: 1;
+        /* display: block; */
+    }
+
+    .label {
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        display: block;
+        opacity: 0;
+        transition: all .2s linear;
+        z-index: 2;
+    }
+    
+    .label .nologo {
+        
+        background-color: black;
+        /* font-family: Pirulen; */
+        width: 100%;
+    }
+
+    .label .logo {
+        width: 100%;
+        background-color: black;
+    }
+/* } */
 
 .cell a:link span {
     color: white;

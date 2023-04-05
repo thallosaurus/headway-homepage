@@ -1,0 +1,81 @@
+{
+    "artists": [
+        {
+            "name": "DJ Platzhalter",
+            "pictureUrl": "https://placekitten.com/150/150",
+            "logoUrl": "placeholder.png",
+            "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ],
+            "featuredAudio": "https://soundcloud.com/rillonautikum/ego-death"
+        },
+        {
+            "name": "DJ M4dC4t",
+            "pictureUrl": "https://placekitten.com/350/350",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ]
+        },
+        {
+            "name": "Meownopren",
+            "pictureUrl": "https://placekitten.com/550/550",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ]
+        },
+        {
+            "name": "MeowCore",
+            "pictureUrl": "https://placekitten.com/450/450",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ]
+        },
+        {
+            "name": "Meonautikewm",
+            "pictureUrl": "https://placekitten.com/420/420",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ]
+        },
+        {
+            "name": "DJ Tangenz",
+            "pictureUrl": "https://placekitten.com/1000/1000",
+            "desc": "Ich bin eine Beschreibung",
+            "socials": [
+                {
+                    "name": "SoundCloud",
+                    "href": "https://soundcloud.com"
+                }
+            ]
+        }
+    ],
+    "gallery": [
+        "https://placekitten.com/1000/1000"
+    ],
+    "dates": [
+        {
+            "title": "Testveranstaltung",
+            "promo": "berghain.jpg"
+        }
+    ]
+}

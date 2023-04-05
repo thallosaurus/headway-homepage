@@ -1,7 +1,7 @@
 <script setup>
 import HeadwayLogo from '../components/HeadwayLogo.vue';
 import NavigationLinks from '../components/NavigationLinks.vue';
-import data from '../assets/dj.json';
+import data from '../assets/data.json';
 </script>
 
 <script>

@@ -12,6 +12,9 @@
             <RouterLink to="/artists">artists</RouterLink>
         </li>
         <li>
+            <RouterLink to="/dates">dates</RouterLink>
+        </li>
+        <li>
             <RouterLink to="/sets">sets</RouterLink>
         </li>
         <li>

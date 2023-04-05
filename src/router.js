@@ -5,6 +5,7 @@ import ArtistsPage from './pages/ArtistsPage.vue';
 import ArtistsDetailsPage from './pages/ArtistsDetailsPage.vue';
 import SetPage from './pages/SetPage.vue';
 import BookingPage from './pages/BookingPage.vue';
+import DatesPage from './pages/DatesPage.vue';
 
 const routes = [
     { 
@@ -16,6 +17,7 @@ const routes = [
     { path: '/artists', component: ArtistsPage },
     { path: '/artists/:id', name: "artistdetails", component: ArtistsDetailsPage },
     { path: '/sets', component: SetPage },
+    { path: '/dates', component: DatesPage },
     { path: '/booking', component: BookingPage },
 ]
 

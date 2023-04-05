@@ -1,8 +1,9 @@
 import { createStore } from 'vuex';
-import data from './assets/dj.json';
+import data from './assets/data.json';
 
 export const store = createStore({
     state: {
-        artists: data.artists
+        // artists: data.artists
+        ...data
     }
 })
