@@ -2,7 +2,7 @@
 <!--     <h1>
         HEADWAY
     </h1> -->
-    <img src="logo.jpg">
+    <img :src="'/logo.jpg'">
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
 </template>
 
