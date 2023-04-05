@@ -26,7 +26,7 @@ export default {
         <RouterLink to="/artists">&lt; Go back</RouterLink>
     </p>
     <h1>
-        <img v-if="currentArtist.logoUrl" class="logo" :src="'/' + currentArtist.logoUrl">
+        <img v-if="currentArtist.logoUrl" class="logo" :src="currentArtist.logoUrl">
         <div class="nologo" v-else>
             {{ currentArtist.name }}
         </div>
