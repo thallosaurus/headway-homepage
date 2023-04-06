@@ -15,7 +15,7 @@ export default {
             <!-- <RouterLink to="" -->
             <RouterLink to="/about">about</RouterLink>
         </li>
-        <li :class="{ selected: currentRoute == 'artists' }">
+        <li :class="{ selected: currentRoute == 'artists' || currentRoute == 'details' }">
             <RouterLink  to="/artists">artists</RouterLink>
         </li>
         <li :class="{ selected: currentRoute == 'dates' }" >

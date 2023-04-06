@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <RouterLink :to="{ name: 'artistdetails', params: { id: index } }">
+    <RouterLink :to="{ name: 'details', params: { id: index } }">
         <div class="cell">
             <img :src="artist.pictureUrl">
             <div class="overlay">
@@ -40,6 +40,15 @@ export default {
 
 .cell:hover .overlay {
     opacity: 1;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 }
 
 @keyframes inverter {
