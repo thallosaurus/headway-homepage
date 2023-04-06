@@ -6,6 +6,8 @@ import ArtistsDetailsPage from './pages/ArtistsDetailsPage.vue';
 import SetPage from './pages/SetPage.vue';
 import BookingPage from './pages/BookingPage.vue';
 import DatesPage from './pages/DatesPage.vue';
+import CookiePolicy from './pages/CookiePolicy.vue';
+import PageNotFound from './pages/PageNotFound.vue';
 
 const routes = [
     { 
@@ -15,10 +17,12 @@ const routes = [
     },
     { path: '/about', component: AboutPage, name: "about" },
     { path: '/artists', component: ArtistsPage, name: "artists" },
-    { path: '/artists/:id', name: "artistdetails", component: ArtistsDetailsPage },
+    { path: '/artists/:id', name: "details", component: ArtistsDetailsPage },
     { path: '/sets', component: SetPage, name: "sets" },
     { path: '/dates', component: DatesPage, name: "dates" },
     { path: '/booking', component: BookingPage, name: "booking" },
+    { path: '/cookiepolicy', component: CookiePolicy, name: "cookies" },
+    { path: "/:pathMatch(.*)", component: PageNotFound, name: "error" }
 ]
 
 // 3. Create the router instance and pass the `routes` option

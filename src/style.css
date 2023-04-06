@@ -80,3 +80,8 @@ button:focus {
   font-family: Pirulen;
   src: url("/pirulen.otf") format("opentype");
 }
+
+@font-face {
+  font-family: Syncopate;
+  src: url("/syncopate-regular.ttf") format("truetype");
+}
