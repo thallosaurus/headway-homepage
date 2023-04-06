@@ -5,7 +5,7 @@
     </p>
 
     <div class="container">
-        <img src="404.jpg">
+        <img :src="'404.jpg'">
     </div>
 </template>
 
