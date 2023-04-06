@@ -47,7 +47,6 @@ export default {
             <p class="text">
 
                 <span>
-
                     {{ currentArtist.desc }}
                 </span>
 

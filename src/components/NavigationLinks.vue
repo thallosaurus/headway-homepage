@@ -18,12 +18,13 @@ export default {
         <li :class="{ selected: currentRoute == 'artists' || currentRoute == 'details' }">
             <RouterLink  to="/artists">artists</RouterLink>
         </li>
-        <li :class="{ selected: currentRoute == 'dates' }" >
+<!--         <li :class="{ selected: currentRoute == 'dates' }" >
             <RouterLink to="/dates">dates</RouterLink>
         </li>
         <li :class="{ selected: currentRoute == 'sets' }" >
             <RouterLink to="/sets">sets</RouterLink>
         </li>
+    -->
         <li :class="{ selected: currentRoute == 'booking' }" >
             <RouterLink to="/booking">booking</RouterLink>
         </li>

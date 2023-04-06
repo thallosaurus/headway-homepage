@@ -18,7 +18,7 @@ export default {
 
             <label for="artist">DJ/Artist:</label>
             <select name="artist" v-model="selectedDj" required>
-                <option disabled value="-1">None selected</option>
+                <option disabled value="-1">-- None selected --</option>
                 <option v-for="(dj, index) in this.$store.state.artists" :value="index">
                     {{ dj.name }}
                 </option>
@@ -42,7 +42,8 @@ export default {
             <textarea name="message"></textarea>
         </div>
 
-        <input type="submit">
+        <!-- <input type="submit"> -->
+        <button>Send</button>
         <!-- </p> -->
 
         <!-- <p> -->
@@ -56,10 +57,60 @@ export default {
 form {
     /* display: flex; */
 }
+
+button {
+    width: 100%;
+}
+
+button:active {
+    background-color: black;
+    color: white;
+}
+
+form input,
+form select {
+    width: 100%;
+    /* border: 2px solid white; */
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 3em;
+    /* font-size: 24px; */
+}
+
+label .name {
+    /* display: inline; */
+}
+
+/* form input {
+    display: inline;
+} */
+
+textarea {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+form select {
+    height: 3em;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+form select option {
+    color: black;
+}
+
 .block {
     /* width: 49%; */
     /* display: inline-block; */
     margin: 1em 0;
+    /* width: 100%; */
 }
 
 /* .right {
