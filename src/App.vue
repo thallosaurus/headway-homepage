@@ -32,6 +32,9 @@ export default {
 </template>
 
 <style scoped>
+header a:hover {
+  text-decoration: none;
+}
 .padding {
   padding: 1em;
 }
