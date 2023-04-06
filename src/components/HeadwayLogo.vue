@@ -34,6 +34,7 @@ img {
 svg {
     /* width: 100%; */
     /* border: 1px solid white; */
+    margin: 1em;
 }
 
 svg text {
