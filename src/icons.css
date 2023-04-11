@@ -1,5 +1,22 @@
-.icon-soundcloud a::before {
-    display: block;
+
+.icon {
+    list-style-type: none;
+}
+
+.icon a::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 0 .5em;
     content: " ";
+    background-size: contain;
+    background-image: url("icons/none.png");
+}
+
+.icon-soundcloud a::before {
     background-image: url("icons/soundcloud.png");
+}
+
+.icon-instagram a::before {
+    background-image: url("icons/instagram.png");
 }

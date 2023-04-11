@@ -13,7 +13,6 @@ export default {
             <img :src="artist.pictureUrl">
             <div class="overlay">
                 <span>
-
                     {{ artist.name }}
                 </span>
             </div>

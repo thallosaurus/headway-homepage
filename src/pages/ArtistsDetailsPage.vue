@@ -1,8 +1,10 @@
 <script>
+import SocialsWidget from '../components/SocialsWidget.vue';
+
 export default {
     methods: {
         book() {
-            this.$router.push("/booking?artist=" + this.$route.params.id)
+            this.$router.push("/booking?artist=" + this.$route.params.id);
         }
     },
     data() {
@@ -10,13 +12,14 @@ export default {
             currentArtistOld: this.$store.state.artists[0],
             artistId: this.$route.params.id,
             artistLabel: ""
-        }
+        };
     },
     computed: {
         currentArtist: function () {
             return this.$store.state.artists[this.artistId];
         }
-    }
+    },
+    components: { SocialsWidget }
 }
 </script>
 
@@ -26,7 +29,7 @@ export default {
         <!-- <p class="logo-container"> -->
         <h1>
             <div class="logo">
-                {{ currentArtist.name }}
+                {{ currentArtist.name.toUpperCase() }}
             </div>
 
         </h1>
@@ -50,13 +53,10 @@ export default {
                     {{ currentArtist.desc }}
                 </span>
 
-            <h2>Socials:</h2>
-            <ul>
-                <li v-for="social in currentArtist.socials" :class="'icon-' + social.icon ?? 'none'">
-                    <a :href="social.href">{{ social.name }}</a>
-                </li>
-            </ul>
             </p>
+
+            <SocialsWidget :links="currentArtist.socials"></SocialsWidget>
+
             <form @submit.stop.prevent="book()">
                 <button class="fullwidth">Book me!</button>
             </form>
@@ -109,7 +109,8 @@ export default {
 
 .logo {
     text-align: center;
-    font-family: Pirulen;
+    font-family: Syncopate;
+    letter-spacing: .4em;
 }
 
 .logo h1 {
@@ -118,13 +119,17 @@ export default {
 
 .social-widget {}
 
-@media (pointer: coarse) {
+@media (pointer: coarse) or (max-width: 786px) {
     #pic {
         float: left;
-        width: 35vw;
+        width: 30vw;
         /* height: 500px; */
         padding: 0 20px 20px 0;
         max-width: 250px;
+    }
+
+    .logo {
+        font-size: .5em;
     }
 }
 </style>

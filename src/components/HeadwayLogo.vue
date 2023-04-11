@@ -4,7 +4,7 @@
     </h1> -->
 <!--     <img :src="'logo.jpg'"> -->
     <!-- <h1 class="logo">HEADWAY</h1> -->
-    <svg viewBox="0 0 138 20">
+    <svg viewBox="0 0 139 20">
         <text x="0" y="15">HEADWAY</text>
     </svg>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>

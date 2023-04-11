@@ -22,6 +22,14 @@ export default {
             });
         }
     },
+    data() {
+        return {
+            artistsShuffled: []
+        }
+    },
+    mounted() {
+        //alert("mounted");
+    },
     components: { NewArtistCell }
 }
 </script>

@@ -2,7 +2,8 @@
 export default {
     data() {
         return {
-            selectedDj: this.$route.query.artist ?? -1
+            selectedDj: this.$route.query.artist ?? -1,
+            disabled: true  //not ready yet
         }
     },
     mounted() {
@@ -12,8 +13,10 @@ export default {
 </script>
 <template>
     <h1>Booking</h1>
-
-    <form>
+    <div>
+        <span :class="{ 'closed': !disabled }">Booking is currently closed.</span>
+    </div>
+    <form :class="{ 'closed': disabled }">
         <div class="block">
 
             <label for="artist">DJ/Artist:</label>
@@ -37,13 +40,12 @@ export default {
         </div>
 
         <div class="block">
-
             <label for="message">Message:</label>
             <textarea name="message"></textarea>
         </div>
 
         <!-- <input type="submit"> -->
-        <button>Send</button>
+        <button v-if="!disabled">Send</button>
         <!-- </p> -->
 
         <!-- <p> -->
@@ -54,6 +56,16 @@ export default {
 </template>
 
 <style scoped>
+span.closed {
+    display: none;
+}
+
+.closed {
+    pointer-events: none;
+    filter: blur(10px);
+    position: relative;
+}
+
 form {
     /* display: flex; */
 }
