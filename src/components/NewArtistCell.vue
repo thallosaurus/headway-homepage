@@ -1,14 +1,23 @@
+<script setup>
+import { ToId } from "../pages/ArtistsDetailsPage.vue";
+</script>
+
 <script>
 export default {
     props: {
         artist: Object,
         index: Number
+    },
+    computed: {
+        artistId() {
+            return ToId(this.$props.artist.name);
+        }
     }
 }
 </script>
 
 <template>
-    <RouterLink :to="{ name: 'details', params: { id: index } }">
+    <RouterLink :to="{ name: 'details', params: { id: artistId } }">
         <div class="cell">
             <img :src="artist.pictureUrl">
             <div class="overlay">

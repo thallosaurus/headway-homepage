@@ -1,6 +1,10 @@
 <script>
 import SocialsWidget from '../components/SocialsWidget.vue';
 
+export function ToId(input) {
+    return input.replace(" ", "-").toLowerCase();
+}
+
 export default {
     methods: {
         book() {
@@ -16,7 +20,13 @@ export default {
     },
     computed: {
         currentArtist: function () {
-            return this.$store.state.artists[this.artistId];
+            //return this.$store.state.artists[this.artistId];
+            return this.$store.state.artists.find((v, i) => {
+                return ToId(v.name) == this.artistNameId;
+            });
+        },
+        artistNameId: function() {
+            return ToId(this.$route.params.id);
         }
     },
     components: { SocialsWidget }

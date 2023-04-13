@@ -7,7 +7,6 @@ export default {
     },
     computed: {
         selectedDj() {
-            let id = 
             return this.$route.query.artist ?? -1
         }
     },
