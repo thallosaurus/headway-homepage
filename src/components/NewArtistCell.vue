@@ -35,6 +35,10 @@ export default {
 
 .overlay span {
     background-color: black;
+    padding: 3px;
+    -webkit-box-shadow: 0px 5px 10px 4px #000000; 
+    box-shadow: 0px 0px 10px 4px #000000;
+    opacity: .8;
 }
 
 .cell:hover .overlay {

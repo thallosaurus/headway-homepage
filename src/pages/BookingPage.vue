@@ -13,8 +13,9 @@ export default {
 </script>
 <template>
     <h1>Booking</h1>
-    <div>
-        <span :class="{ 'closed': !disabled }">Booking is currently closed.</span>
+    <div :class="{ 'closed': !disabled }">
+        <span>Booking is currently closed.</span>
+        <p>Message us at <a href="https://www.instagram.com/headway_techno/">Instagram (@headway_techno)</a> or <a href="mailto:headway.techno@outlook.de">headway.techno@outlook.de</a> for inquiries.</p>
     </div>
     <form :class="{ 'closed': disabled }">
         <div class="block">
@@ -56,7 +57,7 @@ export default {
 </template>
 
 <style scoped>
-span.closed {
+div.closed {
     display: none;
 }
 
