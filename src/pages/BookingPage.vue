@@ -2,8 +2,13 @@
 export default {
     data() {
         return {
-            selectedDj: this.$route.query.artist ?? -1,
-            disabled: true  //not ready yet
+            disabled: true  //its not ready yet
+        }
+    },
+    computed: {
+        selectedDj() {
+            let id = 
+            return this.$route.query.artist ?? -1
         }
     },
     mounted() {
