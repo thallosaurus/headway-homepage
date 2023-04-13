@@ -71,7 +71,7 @@ export default {
 }
 
 .gallery {
-    background-color: green;
+    background-color: transparent;
     width: 100vw;
     height: 100vh;
     position: fixed;
