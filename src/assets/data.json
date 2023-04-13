@@ -76,12 +76,17 @@
         {
             "name": "ImpactCore",
             "pictureUrl": "artists/impactcore.jpg",
+            "subgenres": ["Hardcore", "Frenchcore", "Uptempo"],
             "desc": "Ich bin eine Beschreibung",
             "socials": [
                 {
                     "name": "SoundCloud",
                     "href": "https://soundcloud.com/official_impactcore",
                     "icon": "soundcloud"
+                },
+                {
+                    "name": "Linktree",
+                    "href": "https://linktr.ee/impactcore"
                 }
             ]
         },
