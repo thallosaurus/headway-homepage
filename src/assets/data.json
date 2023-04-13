@@ -103,15 +103,20 @@
             ]
         },
         {
-            "name": "Technoabi",
+            "name": "TECHNOABI",
             "pictureUrl": "artists/technoabi.jpg",
-            "desc": "Ich bin eine Beschreibung",
+            "desc": "Ich bin ein 19 jähriger DJ aus Bayern, den Beruf übe ich seit 3 Jahren aus und lege hauptsächlich Hardtechno und Acid bei 150-160 BPM auf. Jedoch kann ich auch mal auf ein entspanntes Ambiente zugehen und Melodic Techno oder House auflegen im BPM-Bereich von 130 bpm.",
             "socials": [
                 {
                     "name": "SoundCloud",
                     "href": "https://soundcloud.com/technoabi",
                     "icon": "soundcloud"
                 }
+            ],
+            "subgenres": [
+                "Hardtechno",
+                "Schranz",
+                "Acid"
             ]
         },
         {
