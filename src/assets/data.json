@@ -81,7 +81,8 @@
             "socials": [
                 {
                     "name": "Linktree",
-                    "href": "https://linktr.ee/impactcore"
+                    "href": "https://linktr.ee/impactcore",
+                    "icon": "none"
                 }
             ]
         },
