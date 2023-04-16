@@ -4,16 +4,61 @@
     </h1> -->
     <!--     <img :src="'logo.jpg'"> -->
     <!-- <h1 class="logo">HEADWAY</h1> -->
-    <span class="shade">
+    <div class="shade">
         <svg viewBox="0 0 139 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-    </span>
+            <img src='glow.jpg' class="glow">
+
+    </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
 </template>
 
+<style>
+@keyframes initAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(45deg);
+    }
+    
+    35% {
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+
 <style scoped>
+@media (pointer: coarse) or (max-width: 786px) {
+
+    .glow {
+        top: -80% !important;
+    }
+}
+
+.shade {
+    position: relative;
+    //background: url(glow.jpg);
+}
+.glow {
+    position: absolute;
+    width: 100%;
+    object-fit:contain;
+    height: auto;
+    left: 0;
+    top: -100%;
+    z-index: -999;
+
+    animation-name: initAnim;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
 .logo {
     font-family: Syncopate;
     font-weight: 100;
