@@ -27,6 +27,7 @@ export default {
     
     <footer v-if="showHeader">
       <p>(c) 2023 Headway Kollektiv</p>
+      <p><a href='/imprint.txt'>Imprint</a></p>
     </footer>
   </div>
 </template>
