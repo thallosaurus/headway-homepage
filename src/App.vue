@@ -16,7 +16,7 @@ export default {
 <template>
   <header v-if="showHeader">
     <RouterLink to="/">
-        <HeadwayLogo></HeadwayLogo>
+        <HeadwayLogo :showAnim="showHeader"></HeadwayLogo>
     </RouterLink>
     <NavigationLinks></NavigationLinks>
   </header>

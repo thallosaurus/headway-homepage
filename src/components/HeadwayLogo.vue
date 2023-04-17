@@ -1,3 +1,11 @@
+<script>
+export default {
+    props: {
+        showAnim: Boolean
+    }
+}
+</script>
+
 <template>
     <!--     <h1>
         HEADWAY
@@ -9,7 +17,7 @@
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-            <img :src="'glow.jpg'" class="glow">
+            <img :src="'glow.jpg'" class="glow" :class="{ 'anim': !showAnim }">
 
     </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
@@ -44,7 +52,6 @@
 
 .shade {
     position: relative;
-    //background: url(glow.jpg);
 }
 .glow {
     position: absolute;
@@ -54,7 +61,9 @@
     left: 0;
     top: -100%;
     z-index: -999;
+}
 
+.glow.anim {
     animation-name: initAnim;
     animation-duration: 10s;
     animation-iteration-count: 1;
@@ -70,8 +79,7 @@
 .shade::after {
     display: none;
     content: " ";
-    //background: black;
-    //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: black;
     width: 100%;
     height: 139px;
     position: relative;
