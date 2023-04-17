@@ -25,7 +25,7 @@ export default {
 
         <div class="box">
 
-            <HeadwayLogo></HeadwayLogo>
+            <HeadwayLogo showAnim=true></HeadwayLogo>
             <form v-if="!$store.state.cookiesAccepted" class="cookie-consent">
                 <p>
                     we maybe use cookies.

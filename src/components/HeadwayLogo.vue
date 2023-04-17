@@ -2,14 +2,20 @@
 export default {
     props: {
         showAnim: Boolean
+    },
+    mounted() {
+        if (showAnim) {
+            this.$el.addEventListener('click', this.onClick);
+        }
+        alert("mounted");
     }
 }
 </script>
 
 <template>
     <!--     <h1>
-        HEADWAY
-    </h1> -->
+            HEADWAY
+        </h1> -->
     <!--     <img :src="'logo.jpg'"> -->
     <!-- <h1 class="logo">HEADWAY</h1> -->
     <div class="shade">
@@ -17,7 +23,7 @@ export default {
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-            <img :src="'glow.jpg'" class="glow" :class="{ 'anim': !showAnim }">
+        <img :src="'glow.jpg'" class="glow" :class="{ 'anim': !showAnim }">
 
     </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
@@ -29,13 +35,29 @@ export default {
         opacity: 0;
         transform: scale(0.5) rotate(45deg);
     }
-    
+
     35% {
         transform: rotate(0deg);
     }
+
     50% {
         opacity: 1;
     }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsating {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
     100% {
         transform: scale(1);
     }
@@ -53,10 +75,11 @@ export default {
 .shade {
     position: relative;
 }
+
 .glow {
     position: absolute;
     width: 100%;
-    object-fit:contain;
+    object-fit: contain;
     height: auto;
     left: 0;
     top: -100%;
@@ -68,6 +91,7 @@ export default {
     animation-duration: 10s;
     animation-iteration-count: 1;
 }
+
 .logo {
     font-family: Syncopate;
     font-weight: 100;
@@ -111,5 +135,4 @@ svg {
     font-family: Syncopate;
     letter-spacing: .4em;
     fill: white;
-}
-</style>
+}</style>
