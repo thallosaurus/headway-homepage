@@ -9,7 +9,7 @@
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-            <img src='glow.jpg' class="glow">
+            <img :src="'glow.jpg'" class="glow">
 
     </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
