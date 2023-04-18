@@ -27,7 +27,7 @@ export default {
 
         <div class="box">
 
-            <HeadwayLogo :showAnim="this.$route.name == 'landing'"></HeadwayLogo>
+            <HeadwayLogo :showAnim="$route.name == 'landing'"></HeadwayLogo>
             <form v-if="!$store.state.cookiesAccepted" class="cookie-consent">
                 <p>
                     we maybe use cookies.
