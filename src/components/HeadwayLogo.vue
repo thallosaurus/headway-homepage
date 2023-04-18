@@ -17,9 +17,7 @@ export default {
                 // this.breathing = true;
                 this.animation = "pulsating";
             });
-            // this.$el.addEventListener('click', this.onClick);
         }
-        // alert("mounted");
     }
 }
 </script>
@@ -35,7 +33,7 @@ export default {
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-        <img id="logoglow" :src="'glow.jpg'" class="glow" :class="{ 'anim': showAnim }, animation ">
+        <img id="logoglow" :src="'glow.jpg'" class="glow" :class="{ 'anim': this.showAnim }, animation ">
 
     </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
@@ -61,7 +59,7 @@ export default {
     }
 
     50% {
-        transform: scale(1.5);
+        transform: scale(0.7);
     }
 
     100% {
