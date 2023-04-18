@@ -3,11 +3,23 @@ export default {
     props: {
         showAnim: Boolean
     },
-    mounted() {
-        if (showAnim) {
-            this.$el.addEventListener('click', this.onClick);
+    data() {
+        return {
+            animation: 'grow'
         }
-        alert("mounted");
+    },
+    mounted() {
+        if (this.showAnim) {
+            // alert("show anim");
+            let glow = document.querySelector("#logoglow");
+            glow.addEventListener("animationend", (ev) => {
+                console.log("animend", ev);
+                // this.breathing = true;
+                this.animation = "pulsating";
+            });
+            // this.$el.addEventListener('click', this.onClick);
+        }
+        // alert("mounted");
     }
 }
 </script>
@@ -23,7 +35,7 @@ export default {
             <text class='logo-text' x="0" y="15">HEADWAY</text>
         </svg>
         <!--     <img src="/logo.svg"> -->
-        <img :src="'glow.jpg'" class="glow" :class="{ 'anim': !showAnim }">
+        <img id="logoglow" :src="'glow.jpg'" class="glow" :class="{ 'anim': showAnim }, animation ">
 
     </div>
     <p class="subtext">- WE ARE THE NEXT LEVEL -</p>
@@ -35,16 +47,10 @@ export default {
         opacity: 0;
         transform: scale(0.5) rotate(45deg);
     }
-
-    35% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
+    
     100% {
+        transform: rotate(0deg);
+        opacity: 1;
         transform: scale(1);
     }
 }
@@ -55,7 +61,7 @@ export default {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
 
     100% {
@@ -86,10 +92,19 @@ export default {
     z-index: -999;
 }
 
-.glow.anim {
+#logoglow {
+    overflow:hidden;
+}
+
+.glow.grow {
     animation-name: initAnim;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
+}
+.glow.pulsating {
+    animation-name: pulsating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .logo {

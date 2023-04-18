@@ -7,12 +7,14 @@ import data from '../assets/data.json';
 <script>
 export default {
     data() {
+        // console.log(this.$route.name);
         return {
             currentBackground: 0,
         }
     },
     computed: {
         galleryLinks() {
+            // alert(this.$route.name);
             return data.gallery;
         }
     }
@@ -25,7 +27,7 @@ export default {
 
         <div class="box">
 
-            <HeadwayLogo showAnim=true></HeadwayLogo>
+            <HeadwayLogo :showAnim="this.$route.name == 'landing'"></HeadwayLogo>
             <form v-if="!$store.state.cookiesAccepted" class="cookie-consent">
                 <p>
                     we maybe use cookies.
