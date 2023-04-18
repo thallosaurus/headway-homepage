@@ -13,7 +13,7 @@ export default {
     },
     data() {
         return {
-            currentArtistOld: this.$store.state.pdata.artists[0],
+            currentArtistOld: this.$store.state.artists[0],
             artistId: this.$route.params.id,
             artistLabel: ""
         };
@@ -21,7 +21,7 @@ export default {
     computed: {
         currentArtist: function () {
             //return this.$store.state.artists[this.artistId];
-            return this.$store.state.pdata.artists.find((v, i) => {
+            return this.$store.state.artists.find((v, i) => {
                 return ToId(v.name) == this.artistNameId;
             });
         },
