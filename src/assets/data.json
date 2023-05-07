@@ -62,18 +62,6 @@
             ]
         },
         {
-            "name": "Apollon",
-            "pictureUrl": "artists/apollon.jpg",
-            "desc": "Ich bin eine Beschreibung",
-            "socials": [
-                {
-                    "name": "SoundCloud",
-                    "href": "https://soundcloud.com/apollon_859",
-                    "icon": "soundcloud"
-                }
-            ]
-        },
-        {
             "name": "ImpactCore",
             "pictureUrl": "artists/impactcore.jpg",
             "subgenres": ["Hardcore", "Frenchcore", "Uptempo"],
