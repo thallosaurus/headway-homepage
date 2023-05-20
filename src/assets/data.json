@@ -62,19 +62,6 @@
             ]
         },
         {
-            "name": "ImpactCore",
-            "pictureUrl": "artists/impactcore.jpg",
-            "subgenres": ["Hardcore", "Frenchcore", "Uptempo"],
-            "desc": "Ich bin eine Beschreibung",
-            "socials": [
-                {
-                    "name": "Linktree",
-                    "href": "https://linktr.ee/impactcore",
-                    "icon": "none"
-                }
-            ]
-        },
-        {
             "name": "Turntable Terrorist",
             "pictureUrl": "artists/turntableterrorist.jpg",
             "desc": "Ich bin eine Beschreibung",
